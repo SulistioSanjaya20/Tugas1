@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Tugas</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="judul">PENDAFTARAN</string>
+    <string name="tempat_lahir">Tempat Lahir</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="alamat">Alamat</string>
+    <string name="Jk">Jenis Kelamin</string>
+    <string name="L">Laki-Laki</string>
+    <string name="P">Perempuan</string>
+    <string name="agama">Agama</string>
+    <string name="agama1">Islam</string>
+    <string name="agama2">Katolik</string>
+    <string name="agama3">Buddha</string>
+    <string name="agama4">Kristen</string>
+    <string name="agama5">Hindu</string>
+    <string name="agama6">Konghucu</string>
+    <string name="agama7">Aliran Kepercayaan</string>
+    <string name="telepon">Telepon</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="ulangi">Masukkan Password Kembali</string>
+    <string name="kembali">Kembali</string>
+    <string name="daftar">Daftar</string>
+    <string name="invalid_name">Nama Depan Harus Diisi</string>
+    <string name="invalid_belakang">Nama Belakang Harus Diisi</string>
+    <string name="invalid_tl">Tempat Lahir Harus Diisi</string>
+    <string name="invalid_alamat">Alamat Harus Diisi</string>
+    <string name="invalid_telepon">Nomor Telepon Harus Diisi</string>
+    <string name="invalid_email">Email Harus Diisi</string>
+    <string name="invalid_password">Password Harus Diisi</string>
+    <string name="invalid_ulangi">Confirm Password Harus Diisi</string>
+    <string name="invalid_tanggal">Tanggal Lahir Harus Diisi</string>
+</resources>

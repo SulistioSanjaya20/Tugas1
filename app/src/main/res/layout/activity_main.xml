@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/page"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="@string/judul"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:gravity="center_horizontal" />
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textfield1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_namadepan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:hint="@string/nama_depan"
+                            android:textSize="17sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textfield2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_namabelakang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:hint="@string/nama_belakang"
+                            android:textSize="17sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textfield3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_tempatlahir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:hint="@string/tempat_lahir"
+                            android:textSize="17sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textfield4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ettanggallahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:ems="10"
+                            android:hint="@string/tanggal_lahir"
+                            android:textSize="17sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textfield5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:hint="@string/alamat"
+                        android:textSize="17sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/jk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="@string/Jk"
+                android:textSize="20sp"/>
+
+
+            <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RbL"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/L"
+                        android:textSize="12sp"/>
+
+                    <RadioButton
+                        android:id="@+id/RBP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/P"
+                        android:textSize="12sp"/>
+            </RadioGroup>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvagama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="@string/agama"
+                android:textSize="20sp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/jk"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/islam"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/agama1"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/kristen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/agama4"
+                    android:textSize="12sp"/>
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/katolik"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/agama2"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/hindu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/agama5"
+                    android:textSize="12sp"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/buddha"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/agama3"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/konghucu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/agama6"
+                    android:textSize="12sp"/>
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/alirankepercayaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/agama7"
+                android:textSize="12sp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textfield6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_telepon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:hint="@string/telepon"
+                        android:textSize="17sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textfield7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/email"
+                        android:textSize="17sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfield8"
+                app:passwordToggleEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="@string/password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfield9"
+                app:passwordToggleEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_ulangi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="@string/ulangi" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center">
+
+                    <Button
+                        android:id="@+id/btnkembali"
+                        android:layout_width="150dp"
+                        android:layout_height="49dp"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="100sp"
+                        android:onClick="clickexit"
+                        android:background="@drawable/button"
+                        android:text="@string/kembali"/>
+
+                    <Button
+                        android:id="@+id/btn_daftar"
+                        android:layout_width="150dp"
+                        android:layout_height="49dp"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="100sp"
+                        android:background="@drawable/button"
+                        android:text="@string/daftar" />
+
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
